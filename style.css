@@ -1,0 +1,106 @@
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+  --light-grey: #dce4e3;
+  --text-color: #084236;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+body {
+  background-color: var(--body-bg-color);
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.375rem;
+
+  width: 141px;
+  height: 2.375rem;
+  margin-left: 6.125rem;
+  margin-top: 1.125rem;
+
+  color: var(--text-color);
+}
+
+aside {
+  position: absolute;
+  background-color: var(--green);
+  width: 5rem;
+  height: 35rem;
+  left: 0rem;
+  top: 0rem;
+}
+
+aside a {
+  display: flex;
+  margin-left: 1.563rem;
+  margin-top: 1.563rem;
+}
+
+.saindo {
+  margin-top: 11.875rem;
+  margin-left: 0rem;
+  background-color: var(--light-green);
+  border: 1.5rem solid var(--light-green);
+}
+
+.search {
+  display: flex;
+  margin-top: 1.25rem;
+  border: 0.625rem solid var(--light-green);
+  background-color: var(--light-green);
+  margin-left: 0.875rem;
+  border-radius: 0.75rem;
+  margin-right: 0.875rem;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 0rem;
+  margin-left: 1.25rem;
+  display: none;
+}
+
+span {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 1.375rem;
+  color: var(--text-color);
+
+  margin-top: 0.125rem;
+  left: 3.75rem;
+
+  text-transform: capitalize;
+
+  display: none;
+}
+
+input[type="text"] {
+  margin-left: 0.2rem;
+  background-color: var(--light-green);
+  border: none;
+  display: none;
+  outline: none;
+}
+
+.saiu {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+button {
+  background-color: var(--light-green);
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
