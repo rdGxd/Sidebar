@@ -121,17 +121,17 @@ nav {
 
 #doctor {
   display: none;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   width: 2.81rem;
   height: 2.81rem;
 }
 
 .ativo {
-  width: 98px;
-  height: 36px;
-  margin-right: 47px;
+  width: 6.1rem;
+  height: 2.25rem;
+  margin-right: 2.9rem;
 }
 
 div span {
-  margin-left: 9px;
+  margin-left: 0.5rem;
 }
