@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   margin: 0rem;
   padding: 0rem;
@@ -49,10 +51,14 @@ aside a {
 }
 
 .saindo {
+  display: flex;
+  justify-content: center;
   margin-top: 11rem;
   margin-left: 0rem;
+  width: 5rem;
+  height: 5rem;
   background-color: var(--light-green);
-  border: 1.9rem solid var(--light-green);
+  border: 1rem solid var(--light-green);
 }
 
 .search {
@@ -95,7 +101,6 @@ input[type="text"] {
 }
 
 .saiu {
-  margin-right: -4px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
@@ -112,4 +117,21 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+#doctor {
+  display: none;
+  border-radius: 12px;
+  width: 2.81rem;
+  height: 2.81rem;
+}
+
+.ativo {
+  width: 98px;
+  height: 36px;
+  margin-right: 47px;
+}
+
+div span {
+  margin-left: 9px;
 }

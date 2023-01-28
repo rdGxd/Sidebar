@@ -6,6 +6,9 @@ const grid = document.querySelector(".grid");
 const buscar = document.querySelector(".buscar");
 const texto = document.querySelectorAll("span");
 const saiu = document.querySelector(".saiu");
+const doctor = document.querySelector("#doctor");
+const saindo = document.querySelector(".saindo");
+const ativo = document.querySelector("div");
 
 aside.addEventListener("mouseover", sideBarOpen);
 aside.addEventListener("mouseout", sideBarClose);
@@ -20,7 +23,10 @@ function sideBarOpen() {
     texto[i].style.display = "block";
   }
   saiu.style.transform = "matrix(1, 0, 0, 1, 0, 0)";
-  saiu.style.marginLeft = "10.62rem";
+  saiu.style.marginLeft = "2.9rem";
+  doctor.style.display = "flex";
+  saindo.style.width = "15.6rem";
+  ativo.setAttribute("class", "ativo");
 }
 
 function sideBarClose() {
@@ -34,4 +40,7 @@ function sideBarClose() {
   }
   saiu.style.transform = "";
   saiu.style.marginLeft = "";
+  doctor.style.display = "";
+  saindo.style.width = "";
+  ativo.removeAttribute("class", "ativo");
 }
