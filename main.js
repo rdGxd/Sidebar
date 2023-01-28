@@ -13,14 +13,14 @@ aside.addEventListener("mouseout", sideBarClose);
 function sideBarOpen() {
   aside.style.width = "15.625rem";
   h1.style.marginLeft = "10.625rem";
-  menu.style.marginLeft = "12.5rem";
+  menu.style.marginLeft = "13rem";
   logo.style.display = "flex";
   buscar.style.display = "flex";
   for (let i = 0; i < texto.length; ++i) {
     texto[i].style.display = "block";
   }
   saiu.style.transform = "matrix(1, 0, 0, 1, 0, 0)";
-  saiu.style.marginLeft = "11.25rem";
+  saiu.style.marginLeft = "10.62rem";
 }
 
 function sideBarClose() {
