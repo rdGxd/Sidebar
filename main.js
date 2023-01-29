@@ -10,20 +10,17 @@ const doctor = document.querySelector("#doctor");
 const saindo = document.querySelector(".saindo");
 const ativo = document.querySelector("div");
 
-
-// aside.addEventListener("mouseover", sideBarOpen); // Se preferir ativar a sideBar colocar o mouse por cima dela 
-
-// aside.addEventListener("mouseout", sideBarClose); Se preferir fechar a sideBar quando o mouse sair dela
+// aside.addEventListener("mouseover", sideBarOpen); // Se preferir ativar a sideBar ao colocar o mouse por cima dela
+// aside.addEventListener("mouseout", sideBarClose); // Se preferir fechar a sideBar quando o mouse sair dela
 
 // Evento Click para abrir ou fechar a sidebar
-aside.addEventListener("click", () => {
-  if (aside.style.width !== "15.625rem") {
+aside.addEventListener("click", (e) => {
+  if (aside.style.width !== "15.625rem" || e.target === buscar) {
     sideBarOpen();
   } else {
     sideBarClose();
   }
 });
-
 
 // Função para quado a sideBar estiver aberta
 function sideBarOpen() {
@@ -32,6 +29,7 @@ function sideBarOpen() {
   menu.style.marginLeft = "13rem";
   logo.style.display = "flex";
   buscar.style.display = "flex";
+  buscar.focus();
   for (let i = 0; i < texto.length; ++i) {
     texto[i].style.display = "block";
   }
