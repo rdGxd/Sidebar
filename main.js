@@ -2,16 +2,13 @@ const aside = document.querySelector("aside");
 const h1 = document.querySelector("h1");
 const menu = document.querySelector(".menu");
 const logo = document.querySelector(".logo");
-const grid = document.querySelector(".grid");
 const buscar = document.querySelector(".buscar");
+const grid = document.querySelector(".grid");
 const texto = document.querySelectorAll("span");
 const saiu = document.querySelector(".saiu");
 const doctor = document.querySelector("#doctor");
 const saindo = document.querySelector(".saindo");
 const ativo = document.querySelector("div");
-
-// aside.addEventListener("mouseover", sideBarOpen); // Se preferir ativar a sideBar ao colocar o mouse por cima dela
-// aside.addEventListener("mouseout", sideBarClose); // Se preferir fechar a sideBar quando o mouse sair dela
 
 // Evento Click para abrir ou fechar a sidebar
 aside.addEventListener("click", (e) => {
